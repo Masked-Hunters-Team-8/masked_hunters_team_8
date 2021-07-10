@@ -57,8 +57,9 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 body {
   margin: 0;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 1rem;
-  font-weight: 400;
+  /* font-size: 1rem; */
+  font-size: 18px;
+  font-weight: 500;
   line-height: 1.5;
   color: #212529;
   text-align: left;
@@ -318,10 +319,10 @@ h3, .h3 {
   font-size: 1.75rem; }
 
 h4, .h4 {
-  font-size: 1.5rem; }
+  font-size: 2rem; }
 
 h5, .h5 {
-  font-size: 1.25rem; }
+  font-size: 1.5rem; }
 
 h6, .h6 {
   font-size: 1rem; }
@@ -1988,7 +1989,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   user-select: none;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
-  font-size: 1rem;
+  /*font-size: 1rem;*/
   line-height: 1.5;
   border-radius: 0.25rem;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -3667,6 +3668,7 @@ input[type="button"].btn-block {
 
 .card-img {
   width: 100%;
+  padding: 1.25rem;
   border-radius: calc(0.25rem - 1px); }
 
 .card-img-top {
@@ -4407,7 +4409,7 @@ button.close {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
+  border-radius: 10px;
   outline: 0; }
 
 .modal-backdrop {
@@ -4485,9 +4487,11 @@ button.close {
   .modal-sm {
     max-width: 300px; } }
 
-@media (min-width: 992px) {
+@media (min-width: 360px) {
   .modal-lg {
-    max-width: 800px; } }
+    max-width: 60% !important; } }
+    
+
 
 .tooltip {
   position: absolute;
@@ -7270,7 +7274,7 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: "Open Sans", Arial, sans-serif;
   background: #fff;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.8;
   font-weight: 400;
   color: gray; }
@@ -7294,7 +7298,7 @@ h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   color: #000;
-  font-weight: 400; }
+  font-weight: 550; }
 
 .text-primary {
   color: #2f89fc !important; }
@@ -7326,12 +7330,12 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light .navbar-nav {
       padding-bottom: 20px; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    font-size: 13px;
+    font-size: 18px;
     padding-top: .9rem;
     padding-bottom: .9rem;
     padding-left: 20px;
     padding-right: 20px;
-    font-weight: 400;
+    font-weight: 550;
     color: #fff;
     opacity: 1 !important; }
     @media (min-width: 992px) {
@@ -7558,17 +7562,17 @@ h1, h2, h3, h4, h5,
         color: #fff;
         height: 700px; }
         .owl-carousel.home-slider .slider-item .slider-text h1 {
-          font-size: 40px;
+          font-size: 60px;
           color: #fff;
           line-height: 1.2;
-          font-weight: 400; }
+          font-weight: 500; }
           @media (max-width: 991.98px) {
             .owl-carousel.home-slider .slider-item .slider-text h1 {
-              font-size: 40px; } }
+              font-size: 60px; } }
         .owl-carousel.home-slider .slider-item .slider-text p {
-          font-size: 20px;
+          font-size: 23px;
           line-height: 1.5;
-          font-weight: 300;
+          font-weight: 400;
           color: rgba(255, 255, 255, 0.8); }
           .owl-carousel.home-slider .slider-item .slider-text p strong {
             font-weight: 700; }
@@ -7576,14 +7580,14 @@ h1, h2, h3, h4, h5,
               color: #fff; }
         .owl-carousel.home-slider .slider-item .slider-text .breadcrumbs {
           text-transform: uppercase;
-          font-size: 13px;
+          font-size: 15px;
           letter-spacing: 1px; }
           .owl-carousel.home-slider .slider-item .slider-text .breadcrumbs span {
             border-bottom: 2px solid rgba(255, 255, 255, 0.1); }
             .owl-carousel.home-slider .slider-item .slider-text .breadcrumbs span a {
               color: #fff; }
       .owl-carousel.home-slider .slider-item.bread-item {
-        height: 400px !important; }
+        height: 600px !important; }
         @media (max-width: 1199.98px) {
           .owl-carousel.home-slider .slider-item.bread-item {
             background-position: center center !important; } }
@@ -7599,7 +7603,7 @@ h1, h2, h3, h4, h5,
           background: linear-gradient(135deg, #2f89fc 0%, #2cbcbc 100%);
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f89fc', endColorstr='#00dc94', GradientType=1 ); }
         .owl-carousel.home-slider .slider-item.bread-item .slider-text {
-          height: 400px; }
+          height: 450px; }
     .owl-carousel.home-slider .owl-nav .owl-prev span,
     .owl-carousel.home-slider .owl-nav .owl-next span {
       color: #fff; }
@@ -7753,7 +7757,7 @@ h1, h2, h3, h4, h5,
       background: transparent !important;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       color: #fff !important;
-      font-size: 14px;
+      font-size: 16px;
       padding-right: 20px !important; }
       .ftco-intro .appointment-form .form-group input option, .ftco-intro .appointment-form .form-group select option {
         color: #324552;
@@ -7830,7 +7834,7 @@ h1, h2, h3, h4, h5,
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
   .services .media-body h3 {
-    font-size: 20px; }
+    font-size: 25px; }
 
 .about-wrap {
   width: 100%;
@@ -7889,7 +7893,7 @@ h1, h2, h3, h4, h5,
       width: calc(100% - 60px);
       padding-left: 40px; }
       .about-wrap .list-services .text h3 {
-        font-size: 20px;
+        font-size: 25px;
         color: #fff; }
     .about-wrap .list-services:hover .icon:after, .about-wrap .list-services:focus .icon:after {
       -webkit-transform: rotate(180deg);
@@ -8452,14 +8456,14 @@ textarea.form-control {
     box-shadow: 0 0 0 0 rgba(47, 137, 252, 0); } }
 
 .heading-section .subheading {
-  font-size: 14px;
+  font-size: 18px;
   font-size: 400;
   display: block;
   margin-bottom: 20px; }
 
 .heading-section h2 {
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 40px;
+  font-weight: 550;
   background: #2f89fc;
   background: -moz-linear-gradient(-45deg, #2f89fc 0%, #2cbcbc 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, #2f89fc), color-stop(100%, #2cbcbc));
@@ -8548,8 +8552,8 @@ textarea.form-control {
   .ftco-section .nav-pills .nav-link {
     margin-bottom: 0;
     color: #2f89fc;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 17px;
+    font-weight: 500;
     position: relative;
     display: inline-block;
     border-bottom: 1px solid #2f89fc;
@@ -8580,7 +8584,7 @@ textarea.form-control {
         width: 100%;
         margin-bottom: 5px; } }
   .ftco-section .tab-content .tab-pane h2 {
-    font-size: 24px; }
+    font-size: 26px; }
   .ftco-section .tab-content .tab-pane .one-forth {
     width: 50%; }
     .ftco-section .tab-content .tab-pane .one-forth img {
@@ -8643,11 +8647,11 @@ textarea.form-control {
     .ftco-counter {
       background-position: center center !important; } }
   .ftco-counter .text strong.number {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 34px;
     color: #fff; }
   .ftco-counter .text span {
-    font-size: 16px;
+    font-size: 25px;
     color: rgba(255, 255, 255, 0.7); }
   @media (max-width: 767.98px) {
     .ftco-counter .text {
@@ -8790,7 +8794,7 @@ textarea.form-control {
 .block-6 {
   margin-bottom: 40px; }
   .block-6 .media-body p {
-    font-size: 16px; }
+    font-size: 18px; }
 
 .block-10 .chef-img {
   height: 400px; }
@@ -9331,3 +9335,30 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+    .spantext{
+      font-size:15px;
+  }
+  .alink{
+    text-decoration:none; 
+    color: #0062cc;
+    border-bottom:2px solid #0062cc;
+  }
+  .box{
+      padding:60px 0px;
+  }
+  
+  .box-part{
+      background:#ebbebe;;
+      border-radius:0;
+      padding:60px 10px;
+      margin:30px 0px;
+  }
+  .text{
+      margin:20px 0px;
+  }
+  
+  .fa{
+       color:#4183D7;
+  }
+  
