@@ -9361,4 +9361,7 @@ textarea.form-control {
   .fa{
        color:#4183D7;
   }
-  
+  .owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: auto;
+        touch-action: auto;
+  }
