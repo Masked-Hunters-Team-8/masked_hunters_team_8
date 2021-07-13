@@ -204,11 +204,11 @@
 	    		<nav>
 	        		<ul class="pagination" style="margin-bottom:50px;">
             			<li data-page="prev">
-							<span style="width:100px; border-radius: 15px;"> Prev <span class="sr-only">(current)</span></span>
+							<span class="prev" style="width:100px; border-radius: 15px;"> Prev <span class="sr-only">(current)</span></span>
 						</li>
 	        			<!-- Here the JS Function Will Add the Rows -->
             			<li data-page="next" id="prev">
-							<span style="width:100px; border-radius: 15px;"> Next <span class="sr-only">(current)</span></span>
+							<span class="next" style="width:100px; border-radius: 15px;"> Next <span class="sr-only">(current)</span></span>
 						</li>
 	        		</ul>
 	    		</nav>
@@ -1851,6 +1851,43 @@ $(document).ready(function(){
 		width: 100% !important;
 		z-index: 2000000100 !important;
 	}
+
+	  @media (min-width: 375px) {
+		.prev {
+			max-width: 50px;
+		  } 
+		  .next {
+			  max-width: 50px;
+		  }}
+	  @media (min-width: 576px) {
+		
+		.prev {
+		  max-width: 50px;
+		} 
+		.next {
+			max-width: 50px;
+		}}
+	  @media (min-width: 768px) {
+		.prev {
+			max-width: 50px;
+		  } 
+		  .next {
+			  max-width: 50px;
+		  }}
+	  @media (min-width: 992px) {
+		.prev {
+			max-width: 50px;
+		  } 
+		  .next {
+			  max-width: 50px;
+		  }}
+	  @media (min-width: 1200px) {
+		.prev {
+			max-width: 50px;
+		  } 
+		  .next {
+			  max-width: 50px;
+		  }}
   </style>
 
 </body>
